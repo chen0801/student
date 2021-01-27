@@ -42,7 +42,6 @@ public class ListStudentServlet extends HttpServlet {
         }else {
             tableData.put("msg", "查询失败");
         }
-
         tableData.put("code", 0);
         out.print(tableData.toJSONString());
     }

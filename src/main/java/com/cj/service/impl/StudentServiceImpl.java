@@ -112,7 +112,7 @@ public class StudentServiceImpl implements StudentService {
         //获取jedis连接
         Jedis jedis = RedisConnection.getJedis();
         //根据score逆序 即从小到大排序
-        Set<String> zrange = jedis.zrange("student", start, end);
+        Set<String> zrange = jedis.zrevrange("student", start, end);
         ArrayList<Student> list = new ArrayList<>();
         for (String s : zrange) {
             Student student = JSON.parseObject(s, Student.class);
