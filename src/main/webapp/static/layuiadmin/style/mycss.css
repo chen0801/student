@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+.index_container{
+	text-align:center;
+	margin: auto;
+	background:#eeeeee;
+	width:1100px;
+	height:700px;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+}
+.index_title{
+	margin:50px 10px 20px 10px;
+}
